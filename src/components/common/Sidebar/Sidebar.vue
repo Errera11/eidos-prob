@@ -40,15 +40,15 @@ watch(isShowAnimation, () => {
       <SidebarWrap />
     </div>
 
+    <div class="sidebar__logo">
+      <Logo />
+
+      <Typography type="h2">
+        Сим Центр
+      </Typography>
+    </div>
+
     <div class="sidebar__content">
-      <div class="sidebar__logo">
-        <Logo />
-
-        <Typography type="h2">
-          Сим Центр
-        </Typography>
-      </div>
-
       <ul class="sidebar__options">
         <li v-for="(item, idx) in options" :key="idx">
           <SidebarOption :label="item.label" :icon="item.icon" :is-selected="route.fullPath === item.link" :link="item.link" />
@@ -69,6 +69,7 @@ watch(isShowAnimation, () => {
   background: colors.$sc_base-6;
   padding: 0 12px 19px 12px;
   display: flex;
+  flex-direction: column;
   max-width: 274px;
   width: 100%;
   position: relative;
@@ -122,8 +123,8 @@ watch(isShowAnimation, () => {
     display: flex;
     gap: 14px;
     align-items: center;
-    align-self: center;
     padding: 19px 0;
+    margin-left: 29px;
   }
 
   &__bottom {
