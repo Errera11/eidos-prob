@@ -1,1 +1,2 @@
-npm i && npm run dev
+# Installation
+$ npm i && npm run dev
