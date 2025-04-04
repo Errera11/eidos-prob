@@ -1,0 +1,21 @@
+@use "./fonts";
+@use "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Monrope, sans-serif;
+}
+
+html, body, #app, main {
+  height: 100%;
+  position: relative;
+}
